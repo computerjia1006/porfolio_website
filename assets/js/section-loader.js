@@ -8,6 +8,7 @@
  * │   ├── about.html      → About section
  * │   ├── resume.html     → Resume section
  * │   ├── portfolio.html  → Portfolio section
+ * │   ├── blog.html       → Blog section
  * │   └── contact.html    → Contact section
  */
 
@@ -16,7 +17,7 @@
 class SectionLoader {
   constructor() {
     this.sectionsPath = 'sections/';
-    this.sections = ['about', 'resume', 'portfolio', 'contact'];
+    this.sections = ['about', 'resume', 'portfolio', 'blog', 'contact'];
     this.loaded = false;
   }
 
@@ -77,6 +78,17 @@ class SectionLoader {
   }
 
   /**
+   * Initialize blog renderer
+   */
+  async initBlog() {
+    // Check if BlogRenderer exists
+    if (typeof BlogRenderer !== 'undefined') {
+      const blogRenderer = new BlogRenderer();
+      await blogRenderer.init();
+    }
+  }
+
+  /**
    * Initialize - load everything
    */
   async init() {
@@ -92,8 +104,9 @@ class SectionLoader {
 
       this.loaded = true;
       
-      // Initialize portfolio after sections are loaded
+      // Initialize renderers after sections are loaded
       await this.initPortfolio();
+      await this.initBlog();
       
       // Dispatch event when done loading
       document.dispatchEvent(new CustomEvent('sectionsLoaded'));

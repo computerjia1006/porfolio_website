@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags (dynamically updated) -->
+  <title>Blog Post | Jia Yi Chia</title>
+  <meta name="description" content="Blog post by Jia Yi Chia">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/blog-post.css">
+  
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+  <!-- Background Decorations -->
+  <div class="bg-decoration bg-decoration--1"></div>
+  <div class="bg-decoration bg-decoration--2"></div>
+
+  <div class="blog-post-wrapper">
+    <!-- Back Navigation -->
+    <nav class="blog-post__nav">
+      <a href="../index.html#blog" class="blog-post__back">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+        Back to Blog
+      </a>
+    </nav>
+
+    <!-- Post Content (loaded dynamically) -->
+    <article class="blog-post" id="blog-post-content">
+      <div class="loading">Loading post...</div>
+    </article>
+  </div>
+
+  <!-- Blog Post Renderer -->
+  <script>
+    'use strict';
+    
+    class BlogPostRenderer {
+      constructor() {
+        this.container = document.getElementById('blog-post-content');
+        this.dataPath = '../data/blog.json';
+      }
+
+      async init() {
+        const postId = new URLSearchParams(window.location.search).get('id');
+        
+        if (!postId) {
+          this.showError('No post specified');
+          return;
+        }
+
+        try {
+          const response = await fetch(this.dataPath);
+          const data = await response.json();
+          const post = data.posts.find(p => p.id === postId);
+          
+          if (!post) {
+            this.showError('Post not found');
+            return;
+          }
+
+          this.renderPost(post);
+          this.updateMeta(post);
+        } catch (error) {
+          console.error('Error loading post:', error);
+          this.showError('Failed to load post');
+        }
+      }
+
+      renderPost(post) {
+        const formattedDate = new Date(post.date).toLocaleDateString('en-US', {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric'
+        });
+
+        const tagsHTML = post.tags.map(tag => 
+          `<span class="blog-post__tag">${tag}</span>`
+        ).join('');
+
+        const contentHTML = this.renderContent(post.content);
+
+        this.container.innerHTML = `
+          <!-- Hero Image -->
+          <div class="blog-post__hero">
+            <img src="../${post.image}" alt="${post.title}"
+                 onerror="this.src='../assets/images/blog/placeholder.jpg'">
+            <div class="blog-post__hero-overlay"></div>
+          </div>
+
+          <!-- Post Header -->
+          <header class="blog-post__header">
+            <span class="blog-post__category">${post.category}</span>
+            <h1 class="blog-post__title">${post.title}</h1>
+            
+            <div class="blog-post__meta">
+              <span class="blog-post__meta-item">
+                <ion-icon name="calendar-outline"></ion-icon>
+                ${formattedDate}
+              </span>
+              <span class="blog-post__meta-item">
+                <ion-icon name="time-outline"></ion-icon>
+                ${post.readingTime}
+              </span>
+            </div>
+
+            <div class="blog-post__tags">
+              ${tagsHTML}
+            </div>
+          </header>
+
+          <!-- Post Body -->
+          <div class="blog-post__body">
+            ${contentHTML}
+          </div>
+
+          <!-- Post Footer -->
+          <footer class="blog-post__footer">
+            <div class="blog-post__share">
+              <span>Share this post:</span>
+              <div class="blog-post__share-links">
+                <a href="https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}&text=${encodeURIComponent(post.title)}" 
+                   target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(window.location.href)}&title=${encodeURIComponent(post.title)}" 
+                   target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </footer>
+        `;
+      }
+
+      renderContent(content) {
+        if (!content || !content.sections) {
+          return '<p>Content coming soon...</p>';
+        }
+
+        return content.sections.map(section => {
+          switch (section.type) {
+            case 'paragraph':
+              return `<p>${section.text}</p>`;
+            case 'heading':
+              return `<h2>${section.text}</h2>`;
+            case 'subheading':
+              return `<h3>${section.text}</h3>`;
+            case 'list':
+              const items = section.items.map(item => `<li>${item}</li>`).join('');
+              return `<ul>${items}</ul>`;
+            case 'quote':
+              return `<blockquote>${section.text}</blockquote>`;
+            case 'code':
+              return `<pre><code>${section.text}</code></pre>`;
+            case 'image':
+              return `<figure>
+                <img src="../${section.src}" alt="${section.alt || ''}">
+                ${section.caption ? `<figcaption>${section.caption}</figcaption>` : ''}
+              </figure>`;
+            default:
+              return `<p>${section.text || ''}</p>`;
+          }
+        }).join('\n');
+      }
+
+      updateMeta(post) {
+        document.title = `${post.title} | Jia Yi Chia`;
+        document.querySelector('meta[name="description"]').content = post.excerpt;
+      }
+
+      showError(message) {
+        this.container.innerHTML = `
+          <div class="blog-post__error">
+            <ion-icon name="alert-circle-outline"></ion-icon>
+            <h2>${message}</h2>
+            <a href="../index.html#blog" class="btn btn--primary">Back to Blog</a>
+          </div>
+        `;
+      }
+    }
+
+    // Initialize when DOM is ready
+    document.addEventListener('DOMContentLoaded', () => {
+      const renderer = new BlogPostRenderer();
+      renderer.init();
+    });
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,142 @@
+{
+  "posts": [
+    {
+      "id": "welcome-to-my-blog",
+      "title": "Welcome to My Blog",
+      "excerpt": "A space where I share my thoughts on technology, career growth, and lessons learned from building products and leading communities.",
+      "category": "Personal",
+      "date": "2026-01-06",
+      "readingTime": "3 min read",
+      "image": "assets/images/blog/placeholder.svg",
+      "tags": ["intro", "personal", "tech"],
+      "featured": true,
+      "content": {
+        "sections": [
+          {
+            "type": "paragraph",
+            "text": "Welcome to my corner of the internet! I've been meaning to start writing for a while now, and I'm excited to finally have a space to share my thoughts."
+          },
+          {
+            "type": "paragraph",
+            "text": "Here, you'll find posts about my journey in tech, lessons from building products, insights from leading UCL TechSoc, and reflections on balancing multiple passions."
+          },
+          {
+            "type": "heading",
+            "text": "What to Expect"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Technical deep-dives and tutorials",
+              "Career advice for aspiring developers",
+              "Thoughts on AI and emerging technologies",
+              "Behind-the-scenes of content creation"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Stay tuned for more posts coming soon!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "amazon-internship-experience",
+      "title": "What I Learned as an SDE Intern at Amazon",
+      "excerpt": "Reflections on my summer internship at Amazon, working on email automation for Prime Video serving 100k+ users globally.",
+      "category": "Career",
+      "date": "2025-09-15",
+      "readingTime": "8 min read",
+      "image": "assets/images/blog/placeholder.svg",
+      "tags": ["amazon", "internship", "career", "software-engineering"],
+      "featured": true,
+      "content": {
+        "sections": [
+          {
+            "type": "paragraph",
+            "text": "This summer, I had the incredible opportunity to intern as a Software Development Engineer at Amazon's Prime Video team. It was an experience that challenged me, taught me, and ultimately shaped how I think about building software at scale."
+          },
+          {
+            "type": "heading",
+            "text": "The Project"
+          },
+          {
+            "type": "paragraph",
+            "text": "I worked on email automation systems serving 100k+ Prime Video users globally. The scale was unlike anything I had worked on before."
+          },
+          {
+            "type": "heading",
+            "text": "Key Takeaways"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Working at scale requires a different mindset",
+              "Code reviews are invaluable learning opportunities",
+              "Documentation is just as important as code",
+              "Always think about the customer impact"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "exploring-agentic-ai",
+      "title": "Diving into Agentic AI: My Learning Journey",
+      "excerpt": "Exploring the fascinating world of AI agents, LLMs, and autonomous systems. Here's what I've been reading and building.",
+      "category": "Technology",
+      "date": "2025-12-20",
+      "readingTime": "6 min read",
+      "image": "assets/images/blog/placeholder.svg",
+      "tags": ["AI", "LLM", "agentic-ai", "learning"],
+      "featured": false,
+      "content": {
+        "sections": [
+          {
+            "type": "paragraph",
+            "text": "The world of AI is evolving rapidly, and I've been particularly fascinated by the concept of agentic AI systems - AI that can autonomously plan, reason, and execute tasks."
+          },
+          {
+            "type": "heading",
+            "text": "What is Agentic AI?"
+          },
+          {
+            "type": "paragraph",
+            "text": "Unlike traditional AI that responds to single prompts, agentic AI can break down complex goals, use tools, and iterate on solutions autonomously."
+          },
+          {
+            "type": "heading",
+            "text": "Resources I'm Exploring"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Building LLM-powered applications",
+              "Understanding prompt engineering",
+              "Exploring multi-agent systems",
+              "Reading research papers on AI reasoning"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": "all",
+      "label": "All Posts"
+    },
+    {
+      "id": "technology",
+      "label": "Technology"
+    },
+    {
+      "id": "career",
+      "label": "Career"
+    },
+    {
+      "id": "personal",
+      "label": "Personal"
+    }
+  ]
+}

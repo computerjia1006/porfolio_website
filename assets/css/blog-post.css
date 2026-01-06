@@ -1,0 +1,333 @@
+/*-----------------------------------*\
+  #BLOG-POST.CSS - Individual Blog Post Page
+\*-----------------------------------*/
+
+.blog-post-wrapper {
+  min-height: 100vh;
+  padding: var(--space-xl);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .blog-post-wrapper {
+    padding: var(--space-md);
+  }
+}
+
+/**
+ * Navigation
+ */
+.blog-post__nav {
+  margin-bottom: var(--space-xl);
+}
+
+.blog-post__back {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--text-secondary);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  padding: var(--space-sm) var(--space-md);
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  transition: var(--transition-normal);
+}
+
+.blog-post__back:hover {
+  color: var(--clr-teal);
+  border-color: var(--clr-teal);
+  transform: translateX(-5px);
+}
+
+.blog-post__back ion-icon {
+  font-size: var(--fs-lg);
+}
+
+/**
+ * Post Article
+ */
+.blog-post {
+  background: var(--bg-card);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+/**
+ * Hero Image
+ */
+.blog-post__hero {
+  position: relative;
+  aspect-ratio: 21 / 9;
+  overflow: hidden;
+}
+
+.blog-post__hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-post__hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 50%, var(--bg-card) 100%);
+}
+
+/**
+ * Post Header
+ */
+.blog-post__header {
+  padding: var(--space-xl) var(--space-2xl);
+  text-align: center;
+  margin-top: -60px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .blog-post__header {
+    padding: var(--space-lg);
+    margin-top: -40px;
+  }
+}
+
+.blog-post__category {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-md);
+  background: var(--gradient-primary);
+  color: var(--bg-primary);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--space-md);
+}
+
+.blog-post__title {
+  font-size: var(--fs-3xl);
+  font-weight: var(--fw-bold);
+  color: var(--text-primary);
+  line-height: var(--lh-tight);
+  margin-bottom: var(--space-lg);
+}
+
+@media (max-width: 768px) {
+  .blog-post__title {
+    font-size: var(--fs-2xl);
+  }
+}
+
+.blog-post__meta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-md);
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+}
+
+.blog-post__meta-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.blog-post__meta-item ion-icon {
+  color: var(--clr-teal);
+}
+
+.blog-post__tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-sm);
+}
+
+.blog-post__tag {
+  padding: var(--space-xs) var(--space-sm);
+  background: var(--bg-secondary);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+}
+
+/**
+ * Post Body - Content Styles
+ */
+.blog-post__body {
+  padding: 0 var(--space-2xl) var(--space-2xl);
+  font-size: var(--fs-md);
+  line-height: var(--lh-relaxed);
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .blog-post__body {
+    padding: 0 var(--space-lg) var(--space-lg);
+  }
+}
+
+.blog-post__body p {
+  margin-bottom: var(--space-lg);
+}
+
+.blog-post__body h2 {
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-semibold);
+  color: var(--text-primary);
+  margin-top: var(--space-2xl);
+  margin-bottom: var(--space-md);
+}
+
+.blog-post__body h3 {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  color: var(--text-primary);
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-md);
+}
+
+.blog-post__body ul,
+.blog-post__body ol {
+  margin-bottom: var(--space-lg);
+  padding-left: var(--space-xl);
+}
+
+.blog-post__body li {
+  margin-bottom: var(--space-sm);
+}
+
+.blog-post__body blockquote {
+  margin: var(--space-xl) 0;
+  padding: var(--space-lg) var(--space-xl);
+  background: var(--bg-secondary);
+  border-left: 4px solid var(--clr-teal);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-style: italic;
+  color: var(--text-primary);
+}
+
+.blog-post__body pre {
+  margin: var(--space-lg) 0;
+  padding: var(--space-lg);
+  background: var(--bg-primary);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+}
+
+.blog-post__body code {
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  color: var(--clr-teal);
+}
+
+.blog-post__body pre code {
+  color: var(--text-secondary);
+}
+
+.blog-post__body figure {
+  margin: var(--space-xl) 0;
+}
+
+.blog-post__body figure img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+}
+
+.blog-post__body figcaption {
+  text-align: center;
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  margin-top: var(--space-sm);
+}
+
+.blog-post__body a {
+  color: var(--clr-teal);
+  text-decoration: underline;
+}
+
+.blog-post__body a:hover {
+  color: var(--clr-warm-sand);
+}
+
+/**
+ * Post Footer
+ */
+.blog-post__footer {
+  padding: var(--space-xl) var(--space-2xl);
+  border-top: 1px solid var(--border-color);
+}
+
+@media (max-width: 768px) {
+  .blog-post__footer {
+    padding: var(--space-lg);
+  }
+}
+
+.blog-post__share {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+}
+
+.blog-post__share-links {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.blog-post__share-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  font-size: var(--fs-lg);
+  transition: var(--transition-normal);
+}
+
+.blog-post__share-links a:hover {
+  background: var(--clr-teal);
+  color: var(--bg-primary);
+}
+
+/**
+ * Error State
+ */
+.blog-post__error {
+  text-align: center;
+  padding: var(--space-3xl);
+  color: var(--text-muted);
+}
+
+.blog-post__error ion-icon {
+  font-size: 64px;
+  color: var(--clr-dusty-blue);
+  margin-bottom: var(--space-lg);
+}
+
+.blog-post__error h2 {
+  font-size: var(--fs-xl);
+  color: var(--text-primary);
+  margin-bottom: var(--space-xl);
+}
+
+/**
+ * Loading State
+ */
+.blog-post .loading {
+  text-align: center;
+  padding: var(--space-3xl);
+  color: var(--text-muted);
+}
+

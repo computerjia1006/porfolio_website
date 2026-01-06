@@ -6,7 +6,7 @@
       "category": "web-development",
       "categoryLabel": "UCL COMP0016 Module",
       "shortDescription": "Implemented a backend system and developed a dynamic website portal generator with focus on UX/UI design.",
-      "image": "assets/images/projects/portal-placeholder.jpg",
+      "image": "assets/images/projects/placeholder.svg",
       "tags": ["JavaScript", "CSS", "Figma", "UX/UI", "Backend"],
       "featured": true,
       "date": "2024-04",
@@ -73,7 +73,7 @@
       "category": "hackathon",
       "categoryLabel": "Hackathon Project",
       "shortDescription": "Engineered a web application optimizing UX/UI design principles for an intuitive user experience.",
-      "image": "assets/images/projects/food-placeholder.jpg",
+      "image": "assets/images/projects/placeholder.svg",
       "tags": ["HTML", "CSS", "JavaScript", "UX/UI", "Pitching"],
       "featured": true,
       "date": "2023-01",
@@ -131,84 +131,11 @@
           "learnings": "This hackathon taught me the importance of prioritization and rapid iteration. Working under extreme time pressure forced us to focus on what truly matters to users."
         }
       }
-    },
-    {
-      "id": "jia-studying",
-      "title": "Jia Studying Platform",
-      "category": "content",
-      "categoryLabel": "Online Business & Content Creation",
-      "shortDescription": "Built and grew a personal brand with 22k+ followers and collaborations with 250+ organizations.",
-      "image": "assets/images/projects/jia-studying-placeholder.jpg",
-      "tags": ["Content Creation", "Social Media", "Entrepreneurship", "Marketing", "E-commerce"],
-      "featured": true,
-      "date": "2020-06",
-      "duration": "June 2020 - Present",
-      "teamSize": "Solo Founder",
-      "location": "London, UK",
-      "links": {
-        "live": "#"
-      },
-      "stats": [
-        { "value": "22k+", "label": "Followers" },
-        { "value": "1M+", "label": "Total Views" },
-        { "value": "100k+", "label": "Likes" },
-        { "value": "250+", "label": "Collaborations" },
-        { "value": "1000+", "label": "Orders/Year" }
-      ],
-      "collaborations": ["BenQ", "Cambly", "HelloTalk", "UCL Official"],
-      "sections": {
-        "what": {
-          "description": [
-            "Jia Studying is a personal brand and content platform focused on education, productivity, and student life. What started as a passion project has grown into a thriving online business with a global reach.",
-            "The platform spans multiple social media channels and includes an e-commerce component, offering curated products and resources for students."
-          ],
-          "features": [
-            "Social Media Presence: Educational and lifestyle content across multiple platforms",
-            "Online Store: Curated study supplies and productivity tools",
-            "Brand Collaborations: Partnerships with 250+ organizations",
-            "Community: Engaged audience of students and young professionals"
-          ]
-        },
-        "why": {
-          "description": [
-            "I started Jia Studying during the pandemic in 2020, initially as a way to share my study tips and connect with other students during a time of isolation."
-          ],
-          "problem": "There was a gap in authentic, relatable content for students navigating university life.",
-          "role": "Founder and sole creator - responsible for content strategy, creation, partnerships, and business operations."
-        },
-        "how": {
-          "techStack": [
-            { "category": "Content Creation", "items": "Video editing, photography, copywriting" },
-            { "category": "Marketing", "items": "Social media strategy, SEO, analytics" },
-            { "category": "Business", "items": "E-commerce, partnerships, negotiation" },
-            { "category": "Community", "items": "Engagement, customer service, brand building" }
-          ],
-          "process": [
-            { "step": "2020", "description": "Started during pandemic, focused on study content" },
-            { "step": "2021", "description": "Reached first 5k followers, first brand collaboration" },
-            { "step": "2022", "description": "Launched e-commerce store, 100+ collaborations" },
-            { "step": "2023", "description": "Crossed 15k followers, partnered with major brands" },
-            { "step": "2024", "description": "22k+ followers, 250+ collaborations, 1000+ orders/year" }
-          ],
-          "challenges": "Balancing content creation with studies and work while maintaining consistent quality and authenticity."
-        },
-        "results": {
-          "outcomes": [
-            "Built a following of 22,000+ engaged followers",
-            "Generated 1 million+ views across platforms",
-            "Received 100,000+ likes on content",
-            "Established 250+ brand collaborations worldwide",
-            "Driving 1,000+ orders annually through e-commerce"
-          ],
-          "learnings": "Running Jia Studying has taught me invaluable entrepreneurial skills that complement my technical background - marketing, business development, customer relations, and personal branding."
-        }
-      }
     }
   ],
   "categories": [
     { "id": "all", "name": "All" },
     { "id": "web-development", "name": "Web Development" },
-    { "id": "hackathon", "name": "Hackathon" },
-    { "id": "content", "name": "Content" }
+    { "id": "hackathon", "name": "Hackathon" }
   ]
 }
