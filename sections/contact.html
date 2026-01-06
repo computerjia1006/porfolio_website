@@ -54,8 +54,27 @@
         </div>
       </div>
 
-      <!-- Contact Form -->
-      <form class="contact__form" data-reveal="right" data-delay="200" id="contact-form">
+      <!-- Contact Form - Using Web3Forms -->
+      <form 
+        class="contact__form" 
+        data-reveal="right" 
+        data-delay="200" 
+        id="contact-form"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+      >
+        <!-- 🔑 REPLACE WITH YOUR WEB3FORMS ACCESS KEY -->
+        <input type="hidden" name="access_key" value="d52269e8-0f99-4680-a33e-e746093ca68d">
+        
+        <!-- Optional: Customize email subject -->
+        <input type="hidden" name="subject" value="New Contact from Portfolio Website">
+        
+        <!-- Optional: Redirect after submission (or remove for default thank you page) -->
+        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+        
+        <!-- Honeypot Spam Protection -->
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
         <div class="form__row">
           <div class="form__group">
             <label for="name" class="form__label">Name</label>
@@ -82,18 +101,6 @@
         </div>
 
         <div class="form__group">
-          <label for="subject" class="form__label">Subject</label>
-          <input 
-            type="text" 
-            id="subject" 
-            name="subject" 
-            class="form__input" 
-            placeholder="What's this about?"
-            required
-          >
-        </div>
-
-        <div class="form__group">
           <label for="message" class="form__label">Message</label>
           <textarea 
             id="message" 
@@ -113,5 +120,3 @@
     </div>
   </div>
 </section>
-
-
