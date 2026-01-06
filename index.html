@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Jia Yi Chia | Full-Stack Engineer & Content Creator</title>
+  <meta name="description" content="Full-Stack Engineer at UCL, Amazon SDE Intern, UCL TechSoc President. Building impactful tech solutions and inspiring through content.">
+  <meta name="keywords" content="Jia Yi Chia, Full-Stack Engineer, Software Developer, UCL, Amazon, Content Creator">
+  <meta name="author" content="Jia Yi Chia">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jia Yi Chia | Full-Stack Engineer & Content Creator">
+  <meta property="og:description" content="Full-Stack Engineer at UCL, Amazon SDE Intern, UCL TechSoc President.">
+  <meta property="og:image" content="assets/images/profile/og-image.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+  <!-- Background Decorations -->
+  <div class="bg-decoration bg-decoration--1"></div>
+  <div class="bg-decoration bg-decoration--2"></div>
+  <div class="bg-decoration bg-decoration--3"></div>
+
+  <div class="main-wrapper">
+    <!-- Sidebar Toggle (Mobile) -->
+    <button class="sidebar-toggle" aria-label="Toggle sidebar">
+      <ion-icon name="menu-outline"></ion-icon>
+    </button>
+    
+    <!-- Sidebar Overlay (Mobile) -->
+    <div class="sidebar-overlay"></div>
+
+    <!-- ===== SIDEBAR (loaded from sections/sidebar.html) ===== -->
+    <div id="sidebar-container"></div>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="main-content">
+      <!-- Navigation -->
+      <nav class="navbar">
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a href="#about" class="navbar__link active" data-nav="about">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#resume" class="navbar__link" data-nav="resume">Resume</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#portfolio" class="navbar__link" data-nav="portfolio">Portfolio</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#contact" class="navbar__link" data-nav="contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- ===== SECTIONS CONTAINER ===== -->
+      <!-- Each section is loaded from separate files in /sections/ folder -->
+      <div id="sections-container">
+        <!-- sections/about.html    → About Me, Stats, What I Do, Awards -->
+        <!-- sections/resume.html   → Education, Experience, Skills -->
+        <!-- sections/portfolio.html → Projects Grid with Filters -->
+        <!-- sections/contact.html  → Contact Form & Info -->
+      </div>
+    </main>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="assets/js/portfolio-renderer.js"></script>
+  <script src="assets/js/section-loader.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

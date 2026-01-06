@@ -1,0 +1,63 @@
+{
+  "profile": {
+    "name": "Chia Jia Yi",
+    "title": "Full-Stack Engineer",
+    "tagline": "Building impactful tech solutions & inspiring through content",
+    "email": "iamthecatjiji@gmail.com",
+    "phone": "+44 7780 980352",
+    "location": "London, United Kingdom",
+    "birthday": null,
+    "avatar": "assets/images/profile/avatar.jpg"
+  },
+  "social_links": [
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/in/jiayichia/",
+      "icon": "logo-linkedin",
+      "username": "jiayichia"
+    },
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/jiayichia",
+      "icon": "logo-github",
+      "username": "jiayichia"
+    },
+    {
+      "platform": "Instagram",
+      "url": "#",
+      "icon": "logo-instagram",
+      "username": "jiastudying"
+    },
+    {
+      "platform": "YouTube",
+      "url": "#",
+      "icon": "logo-youtube",
+      "username": "Jia Studying"
+    }
+  ],
+  "stats": [
+    { "label": "Followers", "value": "22k+", "icon": "people" },
+    { "label": "Views", "value": "1M+", "icon": "eye" },
+    { "label": "Collaborations", "value": "250+", "icon": "handshake" },
+    { "label": "Orders/Year", "value": "1000+", "icon": "cart" }
+  ],
+  "awards": [
+    {
+      "title": "1st Place G-Research Coding Challenge",
+      "organization": "G-Research",
+      "year": "2024"
+    },
+    {
+      "title": "Top 16 EMEA Future Female Trader",
+      "organization": "Morgan Stanley",
+      "year": "2024"
+    },
+    {
+      "title": "1st Place & Top 15 Leadership Performer",
+      "organization": "Axiata Young CEO Challenge",
+      "year": null
+    }
+  ]
+}
+
+

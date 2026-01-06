@@ -1,0 +1,85 @@
+/*-----------------------------------*\
+  #NAVBAR.CSS - Navigation
+\*-----------------------------------*/
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background: rgba(26, 26, 46, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
+  padding: var(--space-md) var(--space-xl);
+  z-index: var(--z-sticky);
+}
+
+.navbar__list {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-sm);
+}
+
+.navbar__item {
+  position: relative;
+}
+
+.navbar__link {
+  display: block;
+  padding: var(--space-sm) var(--space-lg);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  color: var(--text-muted);
+  border-radius: var(--radius-md);
+  transition: var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar__link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: var(--gradient-primary);
+  transition: var(--transition-normal);
+}
+
+.navbar__link:hover {
+  color: var(--text-primary);
+  background: var(--bg-card);
+}
+
+.navbar__link:hover::before,
+.navbar__link.active::before {
+  width: 60%;
+}
+
+.navbar__link.active {
+  color: var(--clr-teal);
+  background: rgba(126, 196, 207, 0.1);
+}
+
+/**
+ * Mobile Navigation
+ */
+@media (max-width: 768px) {
+  .navbar {
+    padding: var(--space-sm) var(--space-md);
+    overflow-x: auto;
+  }
+  
+  .navbar__list {
+    gap: var(--space-xs);
+    min-width: max-content;
+  }
+  
+  .navbar__link {
+    padding: var(--space-sm) var(--space-md);
+    font-size: var(--fs-xs);
+  }
+}
+
+

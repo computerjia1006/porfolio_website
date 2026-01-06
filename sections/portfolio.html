@@ -1,0 +1,24 @@
+<!-- ===== PORTFOLIO SECTION ===== -->
+<!-- 
+  Projects are loaded dynamically from data/projects.json
+  To add a new project, just add an entry to the JSON file!
+-->
+<section id="portfolio" class="section portfolio" data-section="portfolio">
+  <div class="container">
+    <header class="section__header" data-reveal="up">
+      <h2 class="section__title">Portfolio</h2>
+      <p class="section__subtitle">My recent projects and work</p>
+    </header>
+
+    <!-- Filter Buttons (rendered dynamically) -->
+    <div class="portfolio__filters" data-reveal="up" data-delay="100">
+      <!-- Filters loaded from JSON -->
+    </div>
+
+    <!-- Projects Grid (rendered dynamically) -->
+    <div class="portfolio__grid" data-reveal="up" data-delay="200" id="projects-grid">
+      <!-- Projects loaded from JSON -->
+      <div class="loading">Loading projects...</div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,35 @@
+{
+  "languages": [
+    { "name": "Python", "level": 95, "category": "advanced" },
+    { "name": "JavaScript", "level": 90, "category": "advanced" },
+    { "name": "TypeScript", "level": 85, "category": "advanced" },
+    { "name": "HTML/CSS", "level": 90, "category": "advanced" },
+    { "name": "Java", "level": 75, "category": "intermediate" },
+    { "name": "C", "level": 70, "category": "intermediate" },
+    { "name": "Haskell", "level": 65, "category": "intermediate" },
+    { "name": "Swift", "level": 60, "category": "intermediate" },
+    { "name": "MJML", "level": 80, "category": "advanced" }
+  ],
+  "frameworks": [
+    "React",
+    "Node.js",
+    "Express",
+    "Handlebars"
+  ],
+  "tools": [
+    "Git",
+    "AWS",
+    "Figma",
+    "VS Code",
+    "Docker"
+  ],
+  "soft_skills": [
+    "Leadership",
+    "Public Speaking",
+    "Team Management",
+    "Content Creation",
+    "Pitching"
+  ]
+}
+
+

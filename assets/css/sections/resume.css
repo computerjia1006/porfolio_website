@@ -1,0 +1,245 @@
+/*-----------------------------------*\
+  #RESUME.CSS - Resume Section
+\*-----------------------------------*/
+
+.resume {
+  padding: var(--space-3xl) 0;
+}
+
+/**
+ * Timeline
+ */
+.timeline {
+  margin-bottom: var(--space-3xl);
+}
+
+.timeline__header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.timeline__icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-primary);
+  border-radius: var(--radius-md);
+  font-size: var(--fs-xl);
+  color: var(--bg-primary);
+}
+
+.timeline__title {
+  font-size: var(--fs-2xl);
+  color: var(--text-primary);
+}
+
+.timeline__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+/**
+ * Skills Section
+ */
+.skills {
+  margin-top: var(--space-3xl);
+}
+
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-2xl);
+}
+
+@media (max-width: 768px) {
+  .skills__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.skills__category {
+  margin-bottom: var(--space-xl);
+}
+
+.skills__category-title {
+  font-size: var(--fs-lg);
+  color: var(--clr-warm-sand);
+  margin-bottom: var(--space-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.skills__category-title::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border-color);
+}
+
+/**
+ * Skill Bars
+ */
+.skill-bar {
+  margin-bottom: var(--space-lg);
+}
+
+.skill-bar__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--space-sm);
+}
+
+.skill-bar__name {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  color: var(--text-primary);
+}
+
+.skill-bar__percentage {
+  font-size: var(--fs-sm);
+  color: var(--clr-teal);
+}
+
+.skill-bar__track {
+  height: 8px;
+  background: var(--bg-card);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.skill-bar__fill {
+  height: 100%;
+  background: var(--gradient-primary);
+  border-radius: var(--radius-full);
+  width: 0;
+  transition: width 1s ease;
+}
+
+/**
+ * Skill Tags
+ */
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.skill-tag {
+  padding: var(--space-sm) var(--space-md);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  font-size: var(--fs-sm);
+  color: var(--text-secondary);
+  transition: var(--transition-normal);
+}
+
+.skill-tag:hover {
+  border-color: var(--clr-teal);
+  color: var(--clr-teal);
+  background: rgba(126, 196, 207, 0.1);
+}
+
+/**
+ * Education Card
+ */
+.education-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  padding: var(--space-xl);
+  position: relative;
+  overflow: hidden;
+}
+
+.education-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient-accent);
+}
+
+.education-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.education-card__institution {
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-semibold);
+  color: var(--text-primary);
+}
+
+.education-card__period {
+  font-size: var(--fs-sm);
+  color: var(--clr-teal);
+  background: rgba(126, 196, 207, 0.1);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+}
+
+.education-card__degree {
+  font-size: var(--fs-md);
+  color: var(--clr-warm-sand);
+  margin-bottom: var(--space-sm);
+}
+
+.education-card__location {
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  margin-bottom: var(--space-lg);
+}
+
+.education-card__highlights {
+  margin-bottom: var(--space-lg);
+}
+
+.education-card__highlight {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+  font-size: var(--fs-sm);
+  color: var(--text-secondary);
+}
+
+.education-card__highlight-icon {
+  color: var(--clr-teal);
+}
+
+.education-card__modules-title {
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  margin-bottom: var(--space-sm);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.education-card__modules {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.education-card__module {
+  font-size: var(--fs-xs);
+  padding: 4px 10px;
+  background: rgba(156, 173, 206, 0.1);
+  color: var(--clr-dusty-blue);
+  border-radius: var(--radius-full);
+}
+
+

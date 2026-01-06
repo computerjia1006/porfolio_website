@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#1F1F38"/>
+  <rect x="50" y="50" width="700" height="400" rx="10" fill="#2D2D3A"/>
+  <rect x="70" y="70" width="200" height="20" rx="5" fill="#7EC4CF"/>
+  <rect x="70" y="110" width="300" height="15" rx="3" fill="#9CADCE" opacity="0.5"/>
+  <rect x="70" y="140" width="250" height="15" rx="3" fill="#9CADCE" opacity="0.5"/>
+  <rect x="70" y="180" width="660" height="200" rx="5" fill="#363647"/>
+  <text x="400" y="290" text-anchor="middle" fill="#D4AF89" font-family="sans-serif" font-size="24">Website Portal Generator</text>
+  <text x="400" y="320" text-anchor="middle" fill="#9CADCE" font-family="sans-serif" font-size="14">Add project screenshot</text>
+</svg>
+
+

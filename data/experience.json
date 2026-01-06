@@ -1,0 +1,85 @@
+{
+  "experience": [
+    {
+      "id": "amazon",
+      "company": "Amazon",
+      "role": "Software Developer Engineer Intern",
+      "location": "London, United Kingdom",
+      "period": "June 2024 - September 2024",
+      "logo": "assets/images/logos/amazon.svg",
+      "highlights": [
+        "Full-stack development using MJML, TypeScript, and Handlebars to create responsive email designs",
+        "Developed email automation for 100k+ Prime Video subscription users globally",
+        "Collaborated with internal platform team and AWS tools for deployment"
+      ],
+      "type": "work"
+    },
+    {
+      "id": "spring-weeks",
+      "company": "Bloomberg / Amazon / BP / Wise",
+      "role": "Spring Week Intern",
+      "location": "London, United Kingdom",
+      "period": "April 2023",
+      "logo": "assets/images/logos/multiple.svg",
+      "highlights": [
+        "Participated in spring weeks across finance, digital banking, oil & gas, and technology",
+        "Shadowed senior software engineers and data scientists",
+        "Gained exposure to real-world applications and refined technical skills"
+      ],
+      "type": "work"
+    },
+    {
+      "id": "techsoc",
+      "company": "UCL Technology Society",
+      "role": "President",
+      "location": "London, United Kingdom",
+      "period": "June 2023 - Present",
+      "logo": "assets/images/logos/ucl.svg",
+      "highlights": [
+        "Oversee society with 300+ members, one of the largest at UCL",
+        "Organised Hack-London 2024 - first hackathon collaboration across London universities",
+        "Established partnerships with Deutsche Bank, Marshall Wace, The Trade Desk, G-Research",
+        "Introduced mentorship scheme with experts from BCG, Bloomberg, Apple, Amazon"
+      ],
+      "type": "leadership"
+    },
+    {
+      "id": "jia-studying",
+      "company": "Jia Studying",
+      "role": "Founder & Content Creator",
+      "location": "London, United Kingdom",
+      "period": "June 2020 - Present",
+      "logo": "assets/images/logos/jia-studying.svg",
+      "highlights": [
+        "Built 22k+ follower base with 1M+ views and 100k+ likes",
+        "Collaborated with 250+ organizations worldwide including BenQ, Cambly, HelloTalk, UCL",
+        "Driving 1000+ orders annually on personal online business platform"
+      ],
+      "type": "entrepreneurship"
+    }
+  ],
+  "education": [
+    {
+      "id": "ucl",
+      "institution": "University College London",
+      "degree": "Bachelor Degree in Computer Science",
+      "location": "London, United Kingdom",
+      "period": "2022 - 2025",
+      "logo": "assets/images/logos/ucl.svg",
+      "highlights": [
+        "First Class Grades On Track",
+        "100% grades in COMP0147 Discrete Maths modules"
+      ],
+      "modules": [
+        "Machine Learning for Visual Computing",
+        "Advanced Discrete Mathematics",
+        "Data Structures and Algorithms",
+        "Computer Graphics",
+        "Data Mining and Analysis",
+        "System Engineering"
+      ]
+    }
+  ]
+}
+
+

@@ -1,0 +1,214 @@
+{
+  "projects": [
+    {
+      "id": "website-portal",
+      "title": "Website Portal Generator",
+      "category": "web-development",
+      "categoryLabel": "UCL COMP0016 Module",
+      "shortDescription": "Implemented a backend system and developed a dynamic website portal generator with focus on UX/UI design.",
+      "image": "assets/images/projects/portal-placeholder.jpg",
+      "tags": ["JavaScript", "CSS", "Figma", "UX/UI", "Backend"],
+      "featured": true,
+      "date": "2024-04",
+      "duration": "December 2023 - April 2024",
+      "teamSize": "Team Project",
+      "location": "London, UK",
+      "links": {
+        "github": "#",
+        "live": "#"
+      },
+      "sections": {
+        "what": {
+          "description": [
+            "The Website Portal Generator is a full-stack web application that allows users to dynamically create and customize website portals without coding knowledge. Built as part of the UCL COMP0016 Systems Engineering module, this project was developed in partnership with an industry client.",
+            "The platform provides an intuitive drag-and-drop interface for building professional-looking portals, complete with customizable themes, widgets, and content blocks."
+          ],
+          "features": [
+            "Drag-and-drop portal builder interface",
+            "Customizable themes and color schemes",
+            "Dynamic content management system",
+            "Responsive design for all devices",
+            "User authentication and role management",
+            "Real-time preview functionality"
+          ]
+        },
+        "why": {
+          "description": [
+            "This project was developed to address the need for non-technical users to create professional web portals without requiring development expertise. Many organizations struggle with the complexity of building and maintaining internal portals."
+          ],
+          "problem": "Organizations often need internal portals for communication, resource sharing, and team collaboration, but lack the technical resources to build custom solutions. Existing tools are either too complex or too limited in customization.",
+          "role": "I led the front-end development with a focus on UX/UI design using Figma for prototyping. I ensured seamless integration between the frontend and backend, leveraging modern web technologies to enhance user experience."
+        },
+        "how": {
+          "techStack": [
+            { "category": "Frontend", "items": "JavaScript, CSS3, HTML5" },
+            { "category": "Design", "items": "Figma, Adobe XD" },
+            { "category": "Backend", "items": "Node.js, Express" },
+            { "category": "Database", "items": "MongoDB" }
+          ],
+          "process": [
+            { "step": "Research & Planning", "description": "Conducted user research and created personas to understand target users' needs" },
+            { "step": "Design", "description": "Created wireframes and high-fidelity prototypes in Figma, iterating based on feedback" },
+            { "step": "Frontend Development", "description": "Built responsive UI components with vanilla JavaScript and CSS" },
+            { "step": "Backend Integration", "description": "Developed RESTful APIs and integrated with the frontend" },
+            { "step": "Testing", "description": "Conducted usability testing and fixed issues based on user feedback" },
+            { "step": "Deployment", "description": "Deployed the application and presented to industry partners" }
+          ],
+          "challenges": "One major challenge was implementing the drag-and-drop functionality while maintaining performance. I solved this by using efficient DOM manipulation techniques and implementing virtual scrolling for large content areas."
+        },
+        "results": {
+          "outcomes": [
+            "Successfully delivered a fully functional portal generator",
+            "Received positive feedback from industry partners",
+            "Improved my skills in UX/UI design and frontend development",
+            "Gained experience working in an agile team environment"
+          ],
+          "learnings": "This project taught me the importance of user-centered design and iterative development. Working with real industry partners gave me valuable experience in understanding client requirements and delivering solutions that meet their needs."
+        }
+      }
+    },
+    {
+      "id": "food-wastage",
+      "title": "Reduce Food Wastage App",
+      "category": "hackathon",
+      "categoryLabel": "Hackathon Project",
+      "shortDescription": "Engineered a web application optimizing UX/UI design principles for an intuitive user experience.",
+      "image": "assets/images/projects/food-placeholder.jpg",
+      "tags": ["HTML", "CSS", "JavaScript", "UX/UI", "Pitching"],
+      "featured": true,
+      "date": "2023-01",
+      "duration": "January 2023",
+      "teamSize": "Team of 4",
+      "location": "London, UK",
+      "links": {
+        "github": "#"
+      },
+      "sections": {
+        "what": {
+          "description": [
+            "The Reduce Food Wastage App is a web application designed to help households and businesses track their food inventory, receive expiration alerts, and discover recipes based on ingredients that are about to expire.",
+            "The app provides an intuitive interface for users to manage their food items, set reminders, and make informed decisions about meal planning to minimize waste."
+          ],
+          "features": [
+            "Food inventory tracking with expiration dates",
+            "Smart notifications for items nearing expiration",
+            "Recipe suggestions based on available ingredients",
+            "Statistics dashboard showing waste reduction",
+            "Barcode scanning for easy item entry",
+            "Shareable shopping lists"
+          ]
+        },
+        "why": {
+          "description": [
+            "Food waste is a significant global problem, with approximately one-third of all food produced being wasted. This not only has economic implications but also environmental consequences, contributing to greenhouse gas emissions."
+          ],
+          "problem": "Many households throw away food simply because they forget what's in their fridge or don't know how to use ingredients before they expire. There's a need for a simple, user-friendly solution to help people track and manage their food inventory.",
+          "role": "I served as the Pitching and Front-end Team Lead. I was responsible for leading the UX/UI design, developing the frontend, and presenting the project to judges."
+        },
+        "how": {
+          "techStack": [
+            { "category": "Frontend", "items": "HTML5, CSS3, JavaScript" },
+            { "category": "Design", "items": "Figma (rapid prototyping)" },
+            { "category": "Storage", "items": "LocalStorage API" },
+            { "category": "APIs", "items": "Recipe API integration" }
+          ],
+          "process": [
+            { "step": "Hour 0-2", "description": "Brainstorming and problem definition" },
+            { "step": "Hour 2-4", "description": "Rapid wireframing and design in Figma" },
+            { "step": "Hour 4-16", "description": "Frontend development and feature implementation" },
+            { "step": "Hour 16-20", "description": "Integration and testing" },
+            { "step": "Hour 20-24", "description": "Pitch preparation and presentation" }
+          ],
+          "challenges": "The biggest challenge was building a functional MVP within 24 hours. We prioritized core features and used rapid prototyping techniques."
+        },
+        "results": {
+          "outcomes": [
+            "Successfully delivered a working prototype in 24 hours",
+            "Received positive feedback from hackathon judges",
+            "Demonstrated potential societal impact of the solution",
+            "Strengthened teamwork and rapid development skills"
+          ],
+          "learnings": "This hackathon taught me the importance of prioritization and rapid iteration. Working under extreme time pressure forced us to focus on what truly matters to users."
+        }
+      }
+    },
+    {
+      "id": "jia-studying",
+      "title": "Jia Studying Platform",
+      "category": "content",
+      "categoryLabel": "Online Business & Content Creation",
+      "shortDescription": "Built and grew a personal brand with 22k+ followers and collaborations with 250+ organizations.",
+      "image": "assets/images/projects/jia-studying-placeholder.jpg",
+      "tags": ["Content Creation", "Social Media", "Entrepreneurship", "Marketing", "E-commerce"],
+      "featured": true,
+      "date": "2020-06",
+      "duration": "June 2020 - Present",
+      "teamSize": "Solo Founder",
+      "location": "London, UK",
+      "links": {
+        "live": "#"
+      },
+      "stats": [
+        { "value": "22k+", "label": "Followers" },
+        { "value": "1M+", "label": "Total Views" },
+        { "value": "100k+", "label": "Likes" },
+        { "value": "250+", "label": "Collaborations" },
+        { "value": "1000+", "label": "Orders/Year" }
+      ],
+      "collaborations": ["BenQ", "Cambly", "HelloTalk", "UCL Official"],
+      "sections": {
+        "what": {
+          "description": [
+            "Jia Studying is a personal brand and content platform focused on education, productivity, and student life. What started as a passion project has grown into a thriving online business with a global reach.",
+            "The platform spans multiple social media channels and includes an e-commerce component, offering curated products and resources for students."
+          ],
+          "features": [
+            "Social Media Presence: Educational and lifestyle content across multiple platforms",
+            "Online Store: Curated study supplies and productivity tools",
+            "Brand Collaborations: Partnerships with 250+ organizations",
+            "Community: Engaged audience of students and young professionals"
+          ]
+        },
+        "why": {
+          "description": [
+            "I started Jia Studying during the pandemic in 2020, initially as a way to share my study tips and connect with other students during a time of isolation."
+          ],
+          "problem": "There was a gap in authentic, relatable content for students navigating university life.",
+          "role": "Founder and sole creator - responsible for content strategy, creation, partnerships, and business operations."
+        },
+        "how": {
+          "techStack": [
+            { "category": "Content Creation", "items": "Video editing, photography, copywriting" },
+            { "category": "Marketing", "items": "Social media strategy, SEO, analytics" },
+            { "category": "Business", "items": "E-commerce, partnerships, negotiation" },
+            { "category": "Community", "items": "Engagement, customer service, brand building" }
+          ],
+          "process": [
+            { "step": "2020", "description": "Started during pandemic, focused on study content" },
+            { "step": "2021", "description": "Reached first 5k followers, first brand collaboration" },
+            { "step": "2022", "description": "Launched e-commerce store, 100+ collaborations" },
+            { "step": "2023", "description": "Crossed 15k followers, partnered with major brands" },
+            { "step": "2024", "description": "22k+ followers, 250+ collaborations, 1000+ orders/year" }
+          ],
+          "challenges": "Balancing content creation with studies and work while maintaining consistent quality and authenticity."
+        },
+        "results": {
+          "outcomes": [
+            "Built a following of 22,000+ engaged followers",
+            "Generated 1 million+ views across platforms",
+            "Received 100,000+ likes on content",
+            "Established 250+ brand collaborations worldwide",
+            "Driving 1,000+ orders annually through e-commerce"
+          ],
+          "learnings": "Running Jia Studying has taught me invaluable entrepreneurial skills that complement my technical background - marketing, business development, customer relations, and personal branding."
+        }
+      }
+    }
+  ],
+  "categories": [
+    { "id": "all", "name": "All" },
+    { "id": "web-development", "name": "Web Development" },
+    { "id": "hackathon", "name": "Hackathon" },
+    { "id": "content", "name": "Content" }
+  ]
+}

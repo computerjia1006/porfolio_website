@@ -1,0 +1,104 @@
+/*-----------------------------------*\
+  #ABOUT.CSS - About Section
+\*-----------------------------------*/
+
+.about {
+  padding: var(--space-3xl) 0;
+}
+
+.about__content {
+  margin-bottom: var(--space-3xl);
+}
+
+.about__text {
+  font-size: var(--fs-md);
+  color: var(--text-secondary);
+  line-height: var(--lh-relaxed);
+  margin-bottom: var(--space-lg);
+}
+
+.about__text:last-child {
+  margin-bottom: 0;
+}
+
+/**
+ * Stats Grid
+ */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-lg);
+  margin-bottom: var(--space-3xl);
+}
+
+@media (max-width: 1024px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/**
+ * Services (What I Do)
+ */
+.services {
+  margin-top: var(--space-3xl);
+}
+
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-lg);
+}
+
+/**
+ * Awards Section
+ */
+.awards {
+  margin-top: var(--space-3xl);
+}
+
+.awards__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-md);
+}
+
+/**
+ * Collaborations
+ */
+.collaborations {
+  margin-top: var(--space-3xl);
+}
+
+.collaborations__logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xl);
+  padding: var(--space-xl);
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+}
+
+.collaborations__logo {
+  height: 40px;
+  width: auto;
+  opacity: 0.6;
+  filter: grayscale(100%);
+  transition: var(--transition-normal);
+}
+
+.collaborations__logo:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+
